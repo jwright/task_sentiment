@@ -24,7 +24,7 @@ You can use the library in the following ways:
 ```
 require "task_sentiment"
 
-result = TaskSentiment.new("@joe, send the contract by tomorrow").analyze
+result = TaskSentiment::Analyzer.new("@joe, send the contract by tomorrow").analyze
 
 # result => {
   task: "Send the contract",
