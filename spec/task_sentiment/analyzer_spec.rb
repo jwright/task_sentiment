@@ -12,7 +12,7 @@ RSpec.describe TaskSentiment::Analyzer do
   end
 
   describe "#analyze" do
-    let(:result) { { task: "Do something" } }
+    let(:result) { { task: "Do something", due: "tomorrow" } }
 
     before { allow_any_instance_of(TaskSentiment::Analyzers::OpenAiAnalyzer).to receive(:analyze).and_return(result) }
 
