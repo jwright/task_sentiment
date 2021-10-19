@@ -55,7 +55,10 @@ module TaskSentiment
           #{decoded_phrase("That is really cool", "false")}
           #{decoded_phrase("Please send me the outline", "Send me the outline")}
           #{decoded_phrase("Julie, can you send Daryl the PR by Friday?", "Send Daryl the PR, due: Friday, assigned to: Julie")}
+          #{decoded_phrase("@joe allow users to delete tasks by next week", "Allow users to delete tasks, due: next week, assigned to: Joe")}
           #{decoded_phrase("You can do that to your car.", "Do that to your car, due: today")}
+          #{decoded_phrase("Prepare presentation", "Prepare presentation")}
+          #{decoded_phrase("Mike, can you buy milk?", "Buy milk, assigned to: Mike")}
           #{decoded_phrase(phrase)}
         PROMPT
       end
