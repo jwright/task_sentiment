@@ -61,6 +61,7 @@ module TaskSentiment
           #{decoded_phrase("What time is it?", "false")}
           #{decoded_phrase("Can you send slides?", "Send slides, when: today")}
           #{decoded_phrase("Mike, can you buy milk?", "Buy milk, assigned to: Mike")}
+          #{decoded_phrase("Can you take a look and review that so I can push to production?", "Take a look and review")}
           #{decoded_phrase(phrase)}
         PROMPT
       end
